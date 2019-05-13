@@ -35,9 +35,9 @@ plt.scatter(Xtr[ytr==0,2],Xtr[ytr==0,3], color='r',label=iris.target_names[0])
 plt.scatter(Xtr[ytr==1,2],Xtr[ytr==1,3], color='g',label=iris.target_names[1])
 plt.scatter(Xtr[ytr==2,2],Xtr[ytr==2,3], color='b',label=iris.target_names[2])
 
-plt.scatter(Xte[y_hat==0,2],Xte[y_hat==0,3], color='r', marker='^', label=iris.target_names[0])
-plt.scatter(Xte[y_hat==1,2],Xte[y_hat==1,3], color='g', marker='^', label=iris.target_names[1])
-plt.scatter(Xte[y_hat==2,2],Xte[y_hat==2,3], color='b', marker='^', label=iris.target_names[2])
+plt.scatter(Xte[y_hat==0,2],Xte[y_hat==0,3], color='r', marker='^', label=iris.target_names[0]+' predicted')
+plt.scatter(Xte[y_hat==1,2],Xte[y_hat==1,3], color='g', marker='^', label=iris.target_names[1]+' predicted')
+plt.scatter(Xte[y_hat==2,2],Xte[y_hat==2,3], color='b', marker='^', label=iris.target_names[2]+' predicted')
 
 plt.xlabel(iris.feature_names[2])
 plt.ylabel(iris.feature_names[3])
